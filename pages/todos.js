@@ -1,5 +1,5 @@
 import Dashboard from "../containers/dashboard";
-import TodosData from "../containers/Todos/Todos";
+import TodosData from "../containers/todos/Todos";
 
 const Users = () => {
   return (

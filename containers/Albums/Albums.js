@@ -15,16 +15,19 @@ const Albums = () => {
 
   return (
     <AlbumsWrapper>
-      <h1 className="mb-4">Users</h1>
+      <h1 className="mb-4">Albums</h1>
       <div className="row">
         {data.map((v) => (
           <div className="col-sm-6 col-md-4">
             <Slide className="p-4 rounded shadow">
-              <h2>
-                <p>{v.title}</p>
-                <p>{v.id}</p>
-                <p>{v.userId}</p>
-              </h2>
+              <div className="ht">
+                <h1>Title:{v.title}</h1>
+                <h2>ID:{v.id}</h2>
+                <h2>
+                  USerid:
+                  {v.userId}
+                </h2>
+              </div>
             </Slide>
           </div>
         ))}

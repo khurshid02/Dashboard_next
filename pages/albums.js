@@ -1,9 +1,9 @@
-import Dashboard from "../containers/Dashboard";
+import Dashboard from "../containers/dashboard";
 import AlbumsData from "../containers/Albums/Albums";
 const Users = () => {
   return (
     <div>
-      <Dashboard menu={"users"}>
+      <Dashboard menu={"albums"}>
         <AlbumsData />
       </Dashboard>
     </div>

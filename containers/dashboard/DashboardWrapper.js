@@ -54,6 +54,14 @@ const DashboardWrapper = styled.div`
     }
   }
   .rightside {
+    background-image: radial-gradient(
+      circle,
+      #645de1,
+      #0091ff,
+      #00b5f0,
+      #00d0c6,
+      #79e3a2
+    );
     flex: 1;
     /* flex: 1 1 0%; */
     /* overflow-x: hidden; */

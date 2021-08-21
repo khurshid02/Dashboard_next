@@ -9,7 +9,6 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { setUsers } from "../../redux/actions";
 import UsersWrapper from "./UsersWrapper";
-import { Slide } from "react-awesome-reveal";
 
 const Users = () => {
   const dispatch = useDispatch();
@@ -24,28 +23,26 @@ const Users = () => {
     <UsersWrapper>
       <h1 className="mb-4">Users</h1>
       <Table>
-        <Slide className="rounded shadow">
-          <TableHead>
+        <TableHead>
+          <TableRow>
+            <TableCell>id</TableCell>
+            <TableCell>name</TableCell>
+            <TableCell>username</TableCell>
+            <TableCell>phone</TableCell>
+            <TableCell>website</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {data.map((v) => (
             <TableRow>
-              <TableCell>id</TableCell>
-              <TableCell>name</TableCell>
-              <TableCell>username</TableCell>
-              <TableCell>phone</TableCell>
-              <TableCell>website</TableCell>
+              <TableCell>{v.id}</TableCell>
+              <TableCell>{v.name}</TableCell>
+              <TableCell>{v.username}</TableCell>
+              <TableCell>{v.phone}</TableCell>
+              <TableCell>{v.website}</TableCell>
             </TableRow>
-          </TableHead>
-          <TableBody>
-            {data.map((v) => (
-              <TableRow>
-                <TableCell>{v.id}</TableCell>
-                <TableCell>{v.name}</TableCell>
-                <TableCell>{v.username}</TableCell>
-                <TableCell>{v.phone}</TableCell>
-                <TableCell>{v.website}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Slide>
+          ))}
+        </TableBody>
       </Table>
     </UsersWrapper>
   );

@@ -1,5 +1,11 @@
-import { getAlbums, getTodos, getUsers } from "../api";
-import { SET_ALBUMS, SET_TODOS, SET_USERS, TOGGLE_MENU } from "./types";
+import { getAlbums, getPhotos, getTodos, getUsers } from "../api";
+import {
+  SET_ALBUMS,
+  SET_PHOTOS,
+  SET_TODOS,
+  SET_USERS,
+  TOGGLE_MENU,
+} from "./types";
 
 export const setTodos = async (dispatch) => {
   const data = await getTodos();
@@ -27,4 +33,12 @@ export const setAlbums = async (dispatch) => {
   console.log(data);
 
   dispatch({ type: SET_ALBUMS, payload: data });
+};
+
+export const setPhotos = async (dispatch) => {
+  const data = await getPhotos();
+
+  console.log(data);
+
+  dispatch({ type: SET_PHOTOS, payload: data });
 };

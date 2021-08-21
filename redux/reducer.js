@@ -1,5 +1,11 @@
 import initialState from "./initialState";
-import { SET_ALBUMS, SET_TODOS, SET_USERS, TOGGLE_MENU } from "./types";
+import {
+  SET_ALBUMS,
+  SET_PHOTOS,
+  SET_TODOS,
+  SET_USERS,
+  TOGGLE_MENU,
+} from "./types";
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
@@ -10,6 +16,9 @@ const reducer = (state = initialState, action) => {
       return { ...state, users: action.payload };
 
     case SET_ALBUMS:
+      return { ...state, users: action.payload };
+
+    case SET_PHOTOS:
       return { ...state, users: action.payload };
 
     case TOGGLE_MENU:

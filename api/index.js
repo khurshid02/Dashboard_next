@@ -38,3 +38,16 @@ export const getAlbums = async () => {
     return { error: true };
   }
 };
+
+export const getPhotos = async () => {
+  try {
+    const res = await axios.get(
+      `https://jsonplaceholder.typicode.com/photos?_limit=15`
+    );
+    console.log(res);
+    return res.data;
+  } catch (error) {
+    console.error(error);
+    return { error: true };
+  }
+};

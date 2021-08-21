@@ -1,4 +1,4 @@
-import Dashboard from "../containers/Dashboard";
+import Dashboard from "../containers/dashboard";
 import CardsContainer from "../containers/Home/CardsContainer";
 
 export default function Home() {

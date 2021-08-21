@@ -39,10 +39,11 @@ const Todos = () => {
               <TableCell>{v.id}</TableCell>
               <TableCell>{v.userId}</TableCell>
               <TableCell>{v.title}</TableCell>
-              <TableCell>
-                {(v.completed && <FontAwesomeIcon icon={faCheckCircle} />) ||
-                  ""}
-              </TableCell>
+              <button className="todobutton">
+                <TableCell>
+                  {<FontAwesomeIcon icon={faCheckCircle} />}
+                </TableCell>
+              </button>
             </TableRow>
           ))}
         </TableBody>

@@ -5,7 +5,7 @@ import CardsContainerWrapper from "./CardsContainerWrapper";
 const CardsContainer = () => {
   return (
     <CardsContainerWrapper>
-      <h1>Cards</h1>
+      <h1>Home</h1>
       <div className="row">
         <div className="col-sm-6 col-md-4">
           <Slide className="p-4 rounded shadow">

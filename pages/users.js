@@ -1,4 +1,4 @@
-import Dashboard from "../containers/Dashboard";
+import Dashboard from "../containers/dashboard";
 import UsersData from "../containers/users/Users";
 const Users = () => {
   return (

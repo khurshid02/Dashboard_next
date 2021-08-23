@@ -4,6 +4,7 @@ const initialState = {
   users: [],
   albums: [],
   photos: [],
+  posts: [],
 };
 
 export default initialState;

@@ -1,0 +1,40 @@
+import React from "react";
+import { Slide } from "react-awesome-reveal";
+import OverviewWrapper from "./OverviewWrapper";
+
+const Overview = () => {
+  return (
+    <OverviewWrapper>
+      <h1>Home</h1>
+      <div className="row">
+        <div className="col-sm-6 col-md-4">
+          <Slide className="p-4 rounded shadow">
+            <h2>Users</h2>
+          </Slide>
+        </div>
+        <div className="col-sm-6 col-md-4">
+          <Slide className="p-4 rounded shadow">
+            <h2>Todos</h2>
+          </Slide>
+        </div>
+        <div className="col-sm-6 col-md-4">
+          <Slide className="p-4 rounded shadow">
+            <h2>Albums</h2>
+          </Slide>
+        </div>
+        <div className="col-sm-6 col-md-4">
+          <Slide className="p-4 rounded shadow">
+            <h2>Photos</h2>
+          </Slide>
+        </div>
+        <div className="col-sm-6 col-md-4">
+          <Slide className="p-4 rounded shadow">
+            <h2>Posts</h2>
+          </Slide>
+        </div>
+      </div>
+    </OverviewWrapper>
+  );
+};
+
+export default Overview;

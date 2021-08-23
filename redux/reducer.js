@@ -2,6 +2,7 @@ import initialState from "./initialState";
 import {
   SET_ALBUMS,
   SET_PHOTOS,
+  SET_POSTS,
   SET_TODOS,
   SET_USERS,
   TOGGLE_MENU,
@@ -19,6 +20,9 @@ const reducer = (state = initialState, action) => {
       return { ...state, users: action.payload };
 
     case SET_PHOTOS:
+      return { ...state, users: action.payload };
+
+    case SET_POSTS:
       return { ...state, users: action.payload };
 
     case TOGGLE_MENU:

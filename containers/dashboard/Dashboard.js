@@ -23,6 +23,7 @@ const menus = [
   { id: "albums", to: "/albums", title: "Albums", icon: faVideo },
   { id: "photos", to: "/photos", title: "Photos", icon: faImages },
   { id: "posts", to: "/posts", title: "Posts", icon: faNewspaper },
+  { id: "overview", to: "/Overview", title: "Overview", icon: faNewspaper },
 ];
 
 const Dashboard = ({ children, menu }) => {

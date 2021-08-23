@@ -1,7 +1,8 @@
-import { getAlbums, getPhotos, getTodos, getUsers } from "../api";
+import { getAlbums, getPhotos, getPosts, getTodos, getUsers } from "../api";
 import {
   SET_ALBUMS,
   SET_PHOTOS,
+  SET_POSTS,
   SET_TODOS,
   SET_USERS,
   TOGGLE_MENU,
@@ -41,4 +42,12 @@ export const setPhotos = async (dispatch) => {
   console.log(data);
 
   dispatch({ type: SET_PHOTOS, payload: data });
+};
+
+export const setPosts = async (dispatch) => {
+  const data = await getPosts();
+
+  console.log(data);
+
+  dispatch({ type: SET_POSTS, payload: data });
 };

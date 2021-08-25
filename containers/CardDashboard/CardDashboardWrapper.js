@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const CardDashboardWrapper = styled.div`
+  background-color: white;
   display: flex;
   .sidebar {
     flex-shrink: 0;
@@ -88,8 +89,14 @@ const CardDashboardWrapper = styled.div`
     justify-content: space-between;
   }
 
+  .just {
+    align-items: center;
+  }
+
   .group {
     background: #ffc145;
+    margin-right: 20px;
+    border-radius: 50%;
     width: 35.06px;
     height: 35.06px;
     left: 1343.62px;
@@ -106,6 +113,8 @@ const CardDashboardWrapper = styled.div`
 
   .mr-2 {
     margin-right: 5px;
+    height: 40px;
+    width: 40px;
   }
 `;
 

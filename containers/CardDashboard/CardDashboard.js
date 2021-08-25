@@ -65,27 +65,28 @@ const CardDashboard = ({ children, menu }) => {
       <div className="rightside">
         <header className="shadow d-flex">
           <div className="d-flex">
-            <Button
-              onClick={() => toggleMenu(dispatch)}
-              variant="contained"
-              disableElevation
-              className="me-3 mnyu"
-            >
-              <FontAwesomeIcon icon={faBars} />
-            </Button>
             <div>
-              {" "}
-              <h1>Weekly sumup</h1>
-              <p>Get summary of your weekly online transactions here</p>
+              <Button
+                onClick={() => toggleMenu(dispatch)}
+                variant="contained"
+                disableElevation
+                className="me-3 mnyu"
+              >
+                <FontAwesomeIcon icon={faBars} />
+              </Button>
+              <div>
+                <h3>Weekly sumup</h3>
+                <p>Get summary of your weekly online transactions here</p>
+              </div>
             </div>
           </div>
-          <div className="d-flex">
+          <div className="d-flex just">
             <FontAwesomeIcon icon={faSms} className="mr-2" />
-            <FontAwesomeIcon icon={faBell} />
+            <FontAwesomeIcon icon={faBell} className="mr-2" />
             <div className="d-flex groups">
               <img src="Group.png" alt="" className="group" />
               <div>
-                <h5>Andrew</h5>
+                <h6>Andrew</h6>
                 <p className="admin">Admin account</p>
               </div>
             </div>

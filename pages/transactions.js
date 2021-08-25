@@ -1,10 +1,10 @@
 import CardDashboard from "../containers/CardDashboard/CardDashboard";
-import Overview from "../containers/Overview/Overview";
+import Transactions from "../containers/Transactions/Transactions";
 
 export default function Home() {
   return (
     <CardDashboard menu={"transactions"}>
-      <Overview />
+      <Transactions />
     </CardDashboard>
   );
 }
